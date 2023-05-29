@@ -14,7 +14,7 @@ def generate_pie_chart(labels, values):
   ax.pie(values, labels=labels,  rotatelabels=True)
   ax.axis('equal')
   plt.tight_layout()
-  plt.savefig('pie.png')
+  plt.savefig('chart_pie_global.png')
   plt.close()
   
 if __name__ == '__main__':
