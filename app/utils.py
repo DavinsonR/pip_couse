@@ -1,3 +1,5 @@
+import pandas as pd
+
 #this module has utilites to our program, normally the module files that's call utils has only functions.
 def get_population(country_dict):
   population_dict = {
@@ -14,6 +16,6 @@ def get_population(country_dict):
   return labels, values
 
 
-def population_by_country(data, country):
-  result = list(filter(lambda item: item['Country/Territory'] == country, data))
+def population_by_country(data, Country):
+  result = list(filter(lambda item: item['Country/Territory'] == Country, data))
   return result
